@@ -41,7 +41,6 @@ class HotelIndexTest {
 
         System.out.println(isExists ? "存在" : "不存在");
     }
-
     @Test
     void testDeleteIndex() throws IOException {
         // 1.准备Request
@@ -62,4 +61,6 @@ class HotelIndexTest {
     void tearDown() throws IOException {
         client.close();
     }
+
+
 }

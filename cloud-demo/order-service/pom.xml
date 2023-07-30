@@ -25,31 +25,46 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+        <!--eureka客户端依赖-->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>-->
         <!-- nacos客户端依赖包 -->
-                <dependency>
-                    <groupId>com.alibaba.cloud</groupId>
-                    <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
         <!--feign客户端依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-<!--        &lt;!&ndash;引入HttpClient依赖&ndash;&gt;-->
+        <!--引入HttpClient依赖-->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-httpclient</artifactId>
         </dependency>
-<!--        &lt;!&ndash;引入feign的统一api&ndash;&gt;-->
+        <!--引入feign的统一api-->
         <dependency>
             <groupId>cn.itcast.demo</groupId>
             <artifactId>feign-api</artifactId>
             <version>1.0</version>
         </dependency>
+        <!--引入sentinel依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
         <dependency>
             <groupId>cn.itcast.demo</groupId>
             <artifactId>user-service</artifactId>
             <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>
